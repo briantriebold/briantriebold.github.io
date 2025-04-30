@@ -1,73 +1,93 @@
-/* General body styling */
+:root {
+  --black: #000;
+  --gray-dark: #333;
+  --gray-mid: #666;
+  --gray-light: #ccc;
+  --white: #fff;
+  --accent: #0071e3; /* Apple blue */
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif; /* Or use a Google Font like 'Roboto' */
-    background-color: #ffffff; /* White background */
-    color: #333333; /* Dark gray text */
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--gray-dark);
+  background-color: var(--white);
 }
 
-/* Header */
-header {
-    background-color: #ffffff; /* White background */
-    color: #333333; /* Dark gray text */
-    padding: 50px 0;
-    text-align: center;
+.container {
+  display: flex;
+  height: 100vh;
 }
 
-header h1 {
-    font-size: 3em;
-    margin: 0;
-    font-weight: bold;
+.sidebar {
+  width: 33.33%;
+  background-color: var(--white);
+  padding: 2rem;
+  border-right: 1px solid var(--gray-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-/* Navigation */
-nav {
-    text-align: center;
-    margin-top: 20px;
+.sidebar h1 {
+  font-size: 1.8rem;
+  color: var(--black);
+  margin-bottom: 2rem;
 }
 
-nav a {
-    text-decoration: none;
-    color: #0071e3; /* Apple blue */
-    font-size: 1.2em;
-    padding: 10px 20px;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-nav a:hover {
-    color: #005bb5; /* Darker blue for hover effect */
+.sidebar nav li {
+  margin-bottom: 1rem;
 }
 
-/* Footer */
-footer {
-    background-color: #f8f8f8; /* Light gray */
-    text-align: center;
-    padding: 20px;
+.sidebar nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
 }
 
-footer p {
-    font-size: 1em;
-    color: #777777; /* Light gray text */
+.sidebar nav a:hover {
+  text-decoration: underline;
 }
 
-/* Buttons */
-button {
-    background-color: #4CAF50; /* Apple green */
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.content {
+  width: 66.66%;
+  position: relative;
+  overflow: hidden;
 }
 
-button:hover {
-    background-color: #45a049; /* Slightly darker green */
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(10%);
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  color: var(--white);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.overlay-text h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.overlay-text p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
