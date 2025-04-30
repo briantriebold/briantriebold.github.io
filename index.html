@@ -7,38 +7,31 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <h1>Brian Triebold</h1>
-    <p>Crafting digital experiences with a creative touch</p>
-    <a href="#contact" class="cta-button">Get in Touch</a>
-  </header>
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h1>Brian Triebold</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-  <nav class="navbar">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Main content area -->
+    <main class="content">
+      <div class="image-wrapper">
+        <img src="assets/hero.jpg" alt="Brian Triebold" />
+        <div class="overlay-text">
+          <h2>Turning Data Into Decisions</h2>
+          <p>Power BI • SQL • Automation • Strategy</p>
+        </div>
+      </div>
+    </main>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm Brian Triebold — a builder of smart systems, clean dashboards, and repeatable workflows...</p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <!-- Project entries go here -->
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Let's collaborate on your next project!</p>
-      <a href="mailto:btriex@gmail.com" class="cta-button">Email Me</a>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Brian Triebold. All rights reserved.</p>
-  </footer>
+  </div>
 </body>
 </html>
