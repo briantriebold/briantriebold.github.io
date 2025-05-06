@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects – Brian Triebold</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li> <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li><li><a href="https://drive.google.com/drive/folders/18L5I9yDBCp4q4LgPWAcGpgwEvSXGx-p1?usp=drive_link">Downloads</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav> <!-- Certification Badge -->
+  <div class="sidebar-badge">
+    <img
+      src="assets/PL300cert2.png"
+      alt="Microsoft Certified PL-300 Data Analyst Badge"
+    />
+    <p class="cert-number">Cert ID: CJ5A72-4489EC</p>
+  </div>
+    </aside>
+
+    <!-- Main image + overlays -->
+    <main class="content">
+      <div class="image-wrapper">
+        <img
+          src="assets/brian.triebold.homepage4.svg"
+          alt="Brian Triebold"
+style="filter: brightness(60%);
+        />
+
+        <!-- Top-left overlay for page title -->
+        <div class="overlay-top">
+          <h1>Projects</h1>
+        </div>
+
+        <!-- Bottom-left overlay with embedded reports -->
+        <div class="overlay-text">
+          <div class="report-container">
+            <h3>Sales Dashboard</h3>
+            <iframe
+              src="YOUR_POWERBI_EMBED_URL_HERE"
+              width="300"
+              height="200"
+              frameborder="0"
+              allowFullScreen>
+            </iframe>
+          </div>
+          <div class="report-container">
+            <h3>Customer Churn Analysis</h3>
+            <iframe
+              src="YOUR_POWERBI_EMBED_URL_HERE"
+              width="300"
+              height="200"
+              frameborder="0"
+              allowFullScreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>
